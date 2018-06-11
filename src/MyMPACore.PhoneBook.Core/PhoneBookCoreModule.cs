@@ -26,7 +26,7 @@ namespace MyMPACore.PhoneBook
 
             PhoneBookLocalizationConfigurer.Configure(Configuration.Localization);
 
-            // Enable this line to create a multi-tenant application.
+            // Enable this line to create a multi-tenant application.多租户的管理配置
             Configuration.MultiTenancy.IsEnabled = PhoneBookConsts.MultiTenancyEnabled;
 
             // Configure roles
