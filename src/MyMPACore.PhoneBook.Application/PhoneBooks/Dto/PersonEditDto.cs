@@ -1,16 +1,8 @@
-﻿using Abp.Domain.Entities;
-using Abp.Domain.Entities.Auditing;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace MyMPACore.PhoneBook.PhoneBooks.Persons
+namespace MyMPACore.PhoneBook.PhoneBooks.Dto
 {
-    /// <summary>
-    /// 人员
-    /// </summary>
-    public class Person:FullAuditedEntity
+    public class PersonEditDto
     {
         /// <summary>
         /// 姓名
