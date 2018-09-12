@@ -177,10 +177,7 @@
         <script src="~/lib/signalr/jquery.signalR.js" asp-append-version="true"></script>
 }
 
-        @if (CultureInfo.CurrentUICulture.Name != "en")
-    {
-        <script src="~/lib/jquery-validation/src/localization/messages_@Html.Raw(CultureInfo.CurrentUICulture.Name.Replace("-", "_") + ".js")" asp-append-version="true"></script>
-}
+       
     </environment>
 
     <environment names="Staging,Production">

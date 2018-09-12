@@ -20,8 +20,12 @@ namespace MyMPACore.PhoneBook.PhoneBooks
         /// </summary>
         /// <returns></returns>
         Task<PersonListDto> GetPersonByIdAsync(NullableIdDto input);
-
-
+        /// <summary>
+        /// 通过ID获取联系人的信息进行编辑
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<GetPersonForEditOutput> GetPersonForEditAsync(NullableIdDto input);
         /// <summary>
         /// 新增或者更改联系人信息
         /// </summary>
