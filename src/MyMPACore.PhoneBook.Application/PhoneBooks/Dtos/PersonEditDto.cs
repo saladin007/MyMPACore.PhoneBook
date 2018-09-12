@@ -1,9 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Abp.AutoMapper;
+using MyMPACore.PhoneBook.PhoneBooks.Persons;
 
-namespace MyMPACore.PhoneBook.PhoneBooks.Dto
+namespace MyMPACore.PhoneBook.PhoneBooks.Dtos
 {
+    //AutoMapTo将编辑的DTO转化成实体的DTO持久化到数据库中
+    [AutoMapTo(typeof(Person))]
     public class PersonEditDto
     {
+        public int? Id { get; set; }
         /// <summary>
         /// 姓名
         /// </summary>

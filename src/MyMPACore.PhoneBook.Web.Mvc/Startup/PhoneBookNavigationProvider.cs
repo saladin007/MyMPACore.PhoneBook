@@ -42,9 +42,15 @@ namespace MyMPACore.PhoneBook.Web.Startup
                         L("Roles"),
                         url: "Roles",
                         icon: "local_offer",
-                        requiredPermissionName: PermissionNames.Pages_Roles
+                        requiredPermissionName: PermissionNames.Pages_Roles//是否进行权限判断
                     )
                 )
+                .AddItem(new MenuItemDefinition(
+                    PageNames.Persons,
+                    L("Persons"),
+                    url:"Persons",
+                    icon: "local_offer"
+                    ))
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.About,

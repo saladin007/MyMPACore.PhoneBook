@@ -1,9 +1,7 @@
-﻿using Abp;
-using Abp.Runtime.Validation;
-using Microsoft.EntityFrameworkCore.Query.ExpressionTranslators.Internal;
+﻿using Abp.Runtime.Validation;
 using MyMPACore.PhoneBook.Dto;
 
-namespace MyMPACore.PhoneBook.PhoneBooks.Dto
+namespace MyMPACore.PhoneBook.PhoneBooks.Dtos
 {
     public class GetPersonInput:PagedAndSortedInputDto,IShouldNormalize
     {
@@ -11,7 +9,7 @@ namespace MyMPACore.PhoneBook.PhoneBooks.Dto
         /// 查询参数
         /// </summary>
         public string FilterText { get; set; }
-
+        //视图验证模型
         //ViewModel=>Dto=>model
         /// <summary>
         /// 排序规则
