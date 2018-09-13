@@ -1,4 +1,5 @@
-﻿using Abp.AutoMapper;
+﻿using System.Collections.Generic;
+using Abp.AutoMapper;
 
 namespace MyMPACore.PhoneBook.PhoneBooks.PhoneNumbers.Dto
 {
@@ -13,5 +14,6 @@ namespace MyMPACore.PhoneBook.PhoneBooks.PhoneNumbers.Dto
         /// 电话类型
         /// </summary>
         public PhoneNumberType Type { get; set; }
+        
     }
 }
